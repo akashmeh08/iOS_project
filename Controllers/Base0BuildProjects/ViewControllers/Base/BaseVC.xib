@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseVC">
+            <connections>
+                <outlet property="containerView" destination="5S4-pc-s9X" id="7cl-xG-fZG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5S4-pc-s9X">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="549"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxV-Qc-9M2">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4w-hH-m0S" customClass="SFCenterButton">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                            <state key="normal" title="Home" image="tabBarChatIcon">
+                                <color key="titleColor" red="0.63523036241531372" green="0.6353265643119812" blue="0.63521724939346313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="tabBarChatIconRed">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tabBtnAction:" destination="-1" eventType="touchUpInside" id="3U7-gs-wsv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uk-Bb-Oaa" customClass="SFCenterButton">
+                            <rect key="frame" x="240" y="0.0" width="120" height="50"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                            <state key="normal" title="Category" image="categoriesIcon">
+                                <color key="titleColor" red="0.63523036241531372" green="0.6353265643119812" blue="0.63521724939346313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="categoriesIconRed">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tabBtnAction:" destination="-1" eventType="touchUpInside" id="oW6-Ra-hvm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5Y-W3-CT7" customClass="SFCenterButton">
+                            <rect key="frame" x="360" y="0.0" width="120" height="50"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                            <state key="normal" title="My Order" image="orderIcon">
+                                <color key="titleColor" red="0.63523036239999997" green="0.63532656430000001" blue="0.63521724940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="orderHomeIconRed">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tabBtnAction:" destination="-1" eventType="touchUpInside" id="RY1-5T-LU5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qir-AV-cQ3" customClass="SFCenterButton">
+                            <rect key="frame" x="480" y="0.0" width="120" height="50"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                            <state key="normal" title="Profile" image="profileIcon">
+                                <color key="titleColor" red="0.63523036241531372" green="0.6353265643119812" blue="0.63521724939346313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="profileIconRed">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tabBtnAction:" destination="-1" eventType="touchUpInside" id="eve-tr-u2g"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-Jn-aRU" customClass="SFCenterButton">
+                            <rect key="frame" x="120" y="0.0" width="120" height="50"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                            <state key="normal" title="Notification" image="notificationIcon">
+                                <color key="titleColor" red="0.63523036241531372" green="0.6353265643119812" blue="0.63521724939346313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="notificationIconRed">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tabBtnAction:" destination="-1" eventType="touchUpInside" id="wX0-nE-dQp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99601238965988159" green="0.9961274266242981" blue="0.9959607720375061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="U4w-hH-m0S" firstAttribute="top" secondItem="zxV-Qc-9M2" secondAttribute="top" id="1Ur-0k-fa8"/>
+                        <constraint firstItem="qir-AV-cQ3" firstAttribute="top" secondItem="zxV-Qc-9M2" secondAttribute="top" id="1cb-1o-xvi"/>
+                        <constraint firstItem="FBx-Jn-aRU" firstAttribute="height" secondItem="1uk-Bb-Oaa" secondAttribute="height" id="2yw-96-rrW"/>
+                        <constraint firstItem="N5Y-W3-CT7" firstAttribute="leading" secondItem="1uk-Bb-Oaa" secondAttribute="trailing" id="48X-SE-Svl"/>
+                        <constraint firstItem="1uk-Bb-Oaa" firstAttribute="top" secondItem="zxV-Qc-9M2" secondAttribute="top" id="4YN-zg-umA"/>
+                        <constraint firstItem="U4w-hH-m0S" firstAttribute="width" secondItem="FBx-Jn-aRU" secondAttribute="width" id="95B-F1-CxD"/>
+                        <constraint firstAttribute="trailing" secondItem="qir-AV-cQ3" secondAttribute="trailing" id="Jkp-ZD-vW7"/>
+                        <constraint firstItem="qir-AV-cQ3" firstAttribute="leading" secondItem="N5Y-W3-CT7" secondAttribute="trailing" id="LhT-kM-4SV"/>
+                        <constraint firstItem="U4w-hH-m0S" firstAttribute="height" secondItem="FBx-Jn-aRU" secondAttribute="height" id="MuR-cl-mjQ"/>
+                        <constraint firstItem="N5Y-W3-CT7" firstAttribute="top" secondItem="zxV-Qc-9M2" secondAttribute="top" id="RDw-cf-XGW"/>
+                        <constraint firstItem="1uk-Bb-Oaa" firstAttribute="leading" secondItem="FBx-Jn-aRU" secondAttribute="trailing" id="TIn-zv-sdY"/>
+                        <constraint firstItem="FBx-Jn-aRU" firstAttribute="width" secondItem="1uk-Bb-Oaa" secondAttribute="width" id="b6M-MI-p3n"/>
+                        <constraint firstItem="FBx-Jn-aRU" firstAttribute="leading" secondItem="U4w-hH-m0S" secondAttribute="trailing" id="dfM-ke-zaK"/>
+                        <constraint firstItem="U4w-hH-m0S" firstAttribute="leading" secondItem="zxV-Qc-9M2" secondAttribute="leading" id="eGu-AF-4Pl"/>
+                        <constraint firstItem="N5Y-W3-CT7" firstAttribute="width" secondItem="qir-AV-cQ3" secondAttribute="width" id="fF5-lf-wZp"/>
+                        <constraint firstAttribute="height" constant="50" id="hW4-JK-eqR"/>
+                        <constraint firstItem="FBx-Jn-aRU" firstAttribute="top" secondItem="zxV-Qc-9M2" secondAttribute="top" id="obj-5v-YSg"/>
+                        <constraint firstItem="N5Y-W3-CT7" firstAttribute="height" secondItem="qir-AV-cQ3" secondAttribute="height" id="pZD-tg-3x4"/>
+                        <constraint firstItem="1uk-Bb-Oaa" firstAttribute="height" secondItem="N5Y-W3-CT7" secondAttribute="height" id="tLT-bK-eCx"/>
+                        <constraint firstAttribute="bottom" secondItem="U4w-hH-m0S" secondAttribute="bottom" id="tW9-KL-lu4"/>
+                        <constraint firstItem="1uk-Bb-Oaa" firstAttribute="width" secondItem="N5Y-W3-CT7" secondAttribute="width" id="tm5-n6-BpY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zxV-Qc-9M2" secondAttribute="bottom" id="2ha-aO-NGg"/>
+                <constraint firstItem="zxV-Qc-9M2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ABF-Aw-XZu"/>
+                <constraint firstItem="zxV-Qc-9M2" firstAttribute="top" secondItem="5S4-pc-s9X" secondAttribute="bottom" constant="1" id="ApL-Q2-Q2e"/>
+                <constraint firstItem="5S4-pc-s9X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PJT-zC-10a"/>
+                <constraint firstItem="5S4-pc-s9X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p0D-cp-anu"/>
+                <constraint firstAttribute="trailing" secondItem="zxV-Qc-9M2" secondAttribute="trailing" id="pVg-u6-VS4"/>
+                <constraint firstAttribute="trailing" secondItem="5S4-pc-s9X" secondAttribute="trailing" id="x3T-3l-mEd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="51.5" y="173.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="categoriesIcon" width="30" height="30"/>
+        <image name="categoriesIconRed" width="30" height="30"/>
+        <image name="notificationIcon" width="30" height="30"/>
+        <image name="notificationIconRed" width="30" height="30"/>
+        <image name="orderHomeIconRed" width="30" height="30"/>
+        <image name="orderIcon" width="30" height="30"/>
+        <image name="profileIcon" width="30" height="30"/>
+        <image name="profileIconRed" width="30" height="30"/>
+        <image name="tabBarChatIcon" width="30" height="30"/>
+        <image name="tabBarChatIconRed" width="30" height="30"/>
+    </resources>
+</document>
